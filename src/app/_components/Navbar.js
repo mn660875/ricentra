@@ -13,8 +13,8 @@ export default function Navbar(){
             <div className="hidden md:block">
                 <ul className="flex items-center gap-3  font-semibold text-lg text-[#3B3C36]">
                     <li><Link href={"/"}>Home</Link></li>
-                    <li><Link href={"#"}>Lifestyle</Link></li>
-                    <li><Link href={"#"}>Travel</Link></li>
+                    <li><Link href={"/certifications"}>Certifications</Link></li>
+                    <li><Link href={"/inquiry"}>Export Inquiry</Link></li>
                     <li><Link href={"/gallery"}>Gallery</Link></li>
                     <li><Link href={"/trade"}>Trade</Link></li>
                     <li><Link href={"/aboutus"}>About Us</Link></li>
@@ -22,14 +22,14 @@ export default function Navbar(){
                 </ul>
 
             </div>
-            <div className="flex item-center gap-3 ">
+            {/* <div className="flex item-center gap-3 ">
                 <input type="text"
                 placeholder="Search Here"
 
                 className="px-3 py-1 md:w-[250px] border-1 rounded-md outline-none border-gray-400 hidden md:block "/>
                 <BellIcon size={"30px"} color="#db20d5"/> 
                 
-            </div>
+            </div> */}
             
 <BatteryStatus/>
         </div>

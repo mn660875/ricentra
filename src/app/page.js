@@ -32,6 +32,7 @@ export default function Home() {
       The  <Heart className="text-[#db20d5]" /> Of Premium Rice
      
     </p>
+    
   </section>
 
   <section className="flex flex-col items-center md:flex-row gap-6">

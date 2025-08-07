@@ -18,8 +18,8 @@ export default function Page() {
               <Image
                 src="/imgs/nasir.jpg"
                 alt="Muhammad Nasir"
-                width={100}
-                height={100}
+                width={1200}
+                height={800}
                 className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
               />
               <h3 className="text-xl font-semibold ">Muhammad Nasir</h3>
@@ -34,8 +34,8 @@ export default function Page() {
               <Image
                 src="/imgs/usman.jpg"
                 alt="Chaudhary Usman"
-                width={100}
-                height={100}
+                width={1200}
+                height={800}
                 className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
               />
               <h3 className="text-xl font-semibold">Chaudhary Usman</h3>
