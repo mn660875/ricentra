@@ -22,7 +22,7 @@ export default function Page() {
     toast.error("Input Field Should Not Be Empty")
   }
 
-  let data= await fetch(`/api/inquiry`, {
+  let data= await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/inquiry`, {
     method: "POST",
     body: JSON.stringify({name , companyName , country , quantity , rice_type , phone , email , message  })
   })
