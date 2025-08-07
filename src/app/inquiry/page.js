@@ -22,14 +22,24 @@ export default function Page() {
     toast.error("Input Field Should Not Be Empty")
   }
 
-  let data= await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/inquiry`, {
+  let data= await fetch(`/api/inquiry`, {
     method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
     body: JSON.stringify({name , companyName , country , quantity , rice_type , phone , email , message  })
   })
   data= await data.json();
 
   if(data.success){
     toast.success("Inquiry Sent Successfully");
+    setName("")
+    setCompanyName("")
+    setCountry("")
+    setQuantity("")
+    setEmail("")
+    setPhone("")
+    setMessage("")
   }else{
     toast.error("Error while Inquiry, Please Resubmit")
     }
