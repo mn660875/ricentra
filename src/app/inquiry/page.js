@@ -31,7 +31,7 @@ export default function Page() {
   if(data.success){
     toast.success("Inquiry Sent Successfully");
   }else{
-    toast.error("Error while signing up")
+    toast.error("Error while Inquiry, Please Resubmit")
     }
 
 
