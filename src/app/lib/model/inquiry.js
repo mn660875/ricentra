@@ -7,8 +7,7 @@ const inquirySchema = new mongoose.Schema(
     country: { type: String, required: true },
     quantity: { type: String, required: true },
     rice_type: { type: String, required: true },
-    phone: { type: String, required: true, 
-        match: [/^\+?[1-9]\d{7,14}$/, 'Please enter a valid phone number'], },
+    phone: { type: String, required: true },
     email: {
       type: String,
       required: true,

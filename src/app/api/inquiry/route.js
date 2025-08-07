@@ -18,10 +18,11 @@ export async function GET(){
 
     return NextResponse.json({result: data, success})
 }
-export async function POST(request){
-    const payload= await request.json()
-    await mongoose.connect(connectionStr);
-    let post = new Inquiry(payload)
-    const result= await post.save()
-    return NextResponse.json({result, success: true})
-}
+ export  async function POST(request){
+    let payload= await request.json();
+
+    await mongoose.connect(connectionStr)
+    let inquiry= new Inquiry(payload)
+    const result= await inquiry.save();
+    return NextResponse.json({result, success:true})
+ }
