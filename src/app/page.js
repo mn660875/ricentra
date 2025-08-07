@@ -64,10 +64,10 @@ export default function Home() {
   {/* Latest component should be in normal flow */}
   <section >
     <Latest />
-   
+    <Trade/>
   </section>
   <section>
-  <Trade/>
+  
   </section>
   <section>
   <SliderShowcase/>

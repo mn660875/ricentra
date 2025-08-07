@@ -35,8 +35,10 @@ export default function Navbar() {
         </div>
 
         {/* Battery + Hamburger */}
-        <div className="flex items-center gap-4 md:gap-6">
-          {/* <BatteryStatus /> */}
+        <div className="flex items-center gap-4 md:gap-6 ">
+         <div className="hidden md:block">
+         {  <BatteryStatus /> }
+         </div>
           <div>
             <button onClick={()=>router.push("inquiry")} className="bg-[#db20d5] text-white font-semibold px-3 py-2 rounded-lg cursor-pointer border-1 border-[#db20d5] hover:bg-white hover:text-[#db20d5] transition-all">Request a Quote</button>
           </div>

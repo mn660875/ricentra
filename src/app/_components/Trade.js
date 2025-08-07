@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Latest() {
   return (
     <>
-      <div className="w-full h-100 md:h-[90vh] mt-12 p-10">
+      <div className="w-full  mt-12 p-10">
         <h1 className="headings text-3xl font-bold tracking-tight mb-5">
           {" "}
           Trade & Export Highlights

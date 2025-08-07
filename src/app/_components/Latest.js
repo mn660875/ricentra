@@ -4,7 +4,7 @@ export default function Latest(){
  
     return(
         <>
-           <div className="w-full h-100 md:h-[90vh] mt-12 p-10">
+           <div className="w-full mt-12 p-10">
             <h1 className="headings text-3xl font-bold tracking-tight mb-5">Latest Stories</h1>
            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
   {/* Grid Item 1 */}
