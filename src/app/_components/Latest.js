@@ -10,7 +10,7 @@ export default function Latest(){
   {/* Grid Item 1 */}
   <div className="relative group h-[300px] sm:h-[350px] md:h-[350px] w-full overflow-hidden rounded-xl shadow-lg">
     <Image
-       src={"/imgs/latest-1.jpg"}
+       src={"/imgs/mazdoor.jpg"}
       alt="Rice Field"
       width={1200}
       height={800}
