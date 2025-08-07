@@ -4,9 +4,13 @@ import { useState } from "react";
 import { Menu, X, BellIcon } from "lucide-react";
 import Link from "next/link";
 import BatteryStatus from "./BatteryStatus";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const router= useRouter();
+
+  
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -32,7 +36,10 @@ export default function Navbar() {
 
         {/* Battery + Hamburger */}
         <div className="flex items-center gap-4 md:gap-6">
-          <BatteryStatus />
+          {/* <BatteryStatus /> */}
+          <div>
+            <button onClick={()=>router.push("inquiry")} className="bg-[#db20d5] text-white font-semibold px-3 py-2 rounded-lg cursor-pointer border-1 border-[#db20d5] hover:bg-white hover:text-[#db20d5] transition-all">Request a Quote</button>
+          </div>
 
           {/* Mobile menu toggle */}
           <button className="md:hidden" onClick={toggleMenu}>

@@ -12,7 +12,7 @@ export default function Latest() {
           {/* Grid Item 1 */}
           <div className="relative group h-[300px] sm:h-[350px] md:h-[350px] w-full overflow-hidden rounded-xl shadow-lg">
             <Image
-              src={"/imgs/Trade-2.jpg"}
+              src={"/imgs/Trade-1.jpg"}
               alt="Rice Field"
               width={1200}
               height={800}
@@ -64,7 +64,7 @@ export default function Latest() {
           {/* Grid Item 3 */}
           <div className="relative group h-[300px] sm:h-[350px] md:h-[350px] w-full overflow-hidden rounded-xl shadow-lg">
             <Image
-              src={"/imgs/Trade-2.jpg"}
+              src={"/imgs/Trade-3.jpg"}
               alt="Wheat Field"
               width={1200}
               height={800}

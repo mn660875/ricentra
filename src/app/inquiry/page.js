@@ -2,27 +2,43 @@
 
 import { useState } from "react";
 import Navbar from "../_components/Navbar";
+import { toast } from "react-toastify";
 
 export default function Page() {
-  const [form, setForm] = useState({
-    name: "",
-    company: "",
-    country: "",
-    quantity: "",
-    riceType: "",
-    contact: "",
-    email: "",
-    message: "",
-  });
+ const [name, setName]= useState("")
+ const [companyName, setCompanyName]= useState("")
+ const [country, setCountry]= useState("")
+ const [quantity, setQuantity]= useState("")
+ const [rice_type, setRiceType]= useState("")
+ const [phone, setPhone ]= useState("")
+ const [email, setEmail ]= useState("")
+ const [message , setMessage ]= useState("")
 
-  const handleChange = (e) =>
-    setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", form);
-    // Add backend/email logic here
-    alert("Your enquiry has been sent. Thank you!");
+  if(!name || !companyName || !country || !quantity || !rice_type || !phone || !email || !message){
+    toast.error("Input Field Should Not Be Empty")
+  }
+
+  let data= await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/inquiry`, {
+    method: "POST",
+    body: JSON.stringify({name , companyName , country , quantity , rice_type , phone , email , message  })
+  })
+  data= await data.json();
+
+  if(data.success){
+    toast.success("Inquiry Sent Successfully");
+  }else{
+    toast.error("Error while signing up")
+    }
+
+
+
+
+   
+   
   };
 
   return (
@@ -42,14 +58,19 @@ export default function Page() {
           name="name"
           placeholder="Full Name"
           required
-          onChange={handleChange}
+          value={name}
+          onChange={(e)=>setName(e.target.value)}
+        
+      
           className="p-3 rounded border border-gray-300"
         />
         <input
           type="text"
           name="company"
           placeholder="Company Name"
-          onChange={handleChange}
+          value={companyName}
+          onChange={(e)=>setCompanyName(e.target.value)}
+          
           className="p-3 rounded border border-gray-300"
         />
         <input
@@ -57,7 +78,9 @@ export default function Page() {
           name="country"
           placeholder="Country"
           required
-          onChange={handleChange}
+          value={country}
+          onChange={(e)=>setCountry(e.target.value)}
+         
           className="p-3 rounded border border-gray-300"
         />
         <input
@@ -65,7 +88,9 @@ export default function Page() {
           name="quantity"
           placeholder="Quantity Required (e.g., 50 tons)"
           required
-          onChange={handleChange}
+          value={quantity}
+          onChange={(e)=>setQuantity(e.target.value)}
+        
           className="p-3 rounded border border-gray-300"
         />
         <input
@@ -73,7 +98,9 @@ export default function Page() {
           name="riceType"
           placeholder="Type of Rice (e.g., Basmati, IRRI-6)"
           required
-          onChange={handleChange}
+          value={rice_type}
+          onChange={(e)=>setRiceType(e.target.value)}
+          
           className="p-3 rounded border border-gray-300"
         />
         <input
@@ -81,7 +108,9 @@ export default function Page() {
           name="contact"
           placeholder="Phone / WhatsApp"
           required
-          onChange={handleChange}
+          value={phone}
+          onChange={(e)=>setPhone(e.target.value)}
+         
           className="p-3 rounded border border-gray-300"
         />
         <input
@@ -89,14 +118,18 @@ export default function Page() {
           name="email"
           placeholder="Email Address"
           required
-          onChange={handleChange}
+          value={email}
+          onChange={(e)=>setEmail(e.target.value)}
+         
           className="p-3 rounded border border-gray-300"
         />
         <textarea
           name="message"
           placeholder="Additional Message (Optional)"
           rows={4}
-          onChange={handleChange}
+          value={message}
+          onChange={(e)=>setMessage(e.target.value)}
+         
           className="p-3 rounded border border-gray-300"
         ></textarea>
 
