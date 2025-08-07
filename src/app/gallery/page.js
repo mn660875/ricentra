@@ -19,7 +19,7 @@ export default  function Page(){
                 className="w-[100%] h-[100%] object-cover rounded-lg"/>
             </div>
             <div className="col-span-2 rounded-lg">
-            <Image src={"/imgs/latest-1.jpg"}
+            <Image src={"/imgs/crop.jpg"}
                 alt="1"
                 width={1200}
                 height={800}

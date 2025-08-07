@@ -10,7 +10,6 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const router= useRouter();
 
-  
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -19,7 +18,7 @@ export default function Navbar() {
       <nav className="w-full bg-white shadow-sm px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="bg-[#db20d5] px-3 py-1 rounded-lg">
-          <h1 className="text-lg font-bold text-white">Logo</h1>
+          <h1 onClick={()=>router.push("/")} className="text-lg cursor-pointer font-bold text-white italic">Ricentra</h1>
         </div>
 
         {/* Desktop Menu */}
