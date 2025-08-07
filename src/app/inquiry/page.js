@@ -40,6 +40,7 @@ export default function Page() {
     setEmail("")
     setPhone("")
     setMessage("")
+    setRiceType("")
   }else{
     toast.error("Error while Inquiry, Please Resubmit")
     }
