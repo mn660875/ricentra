@@ -40,6 +40,24 @@ const certifications = [
     description:
       "We are officially registered with the Chamber of Commerce, Sahiwal — recognized as a verified business entity in the region.",
   },
+  {
+    title: "Security Exchange Commission Pakistan(SECP)",
+    status: "Verified",
+    description:
+      "We are officially registered with the Security Exchange Commission Pakistan(SECP) — recognized as a verified business entity in the region.",
+  },
+  {
+    title: "Trade Development Authority of Pakistan (TDAP)",
+    status: "Verified",
+    description:
+      "We are officially registered with the Security Exchange Commission Pakistan(SECP) — recognized as a verified business entity in the region.",
+  },
+  {
+    title: "WEBOC Registration",
+    status: "Verified",
+    description:
+      "We are officially registered with the WEBOC — recognized as a verified business entity in the region.",
+  },
 ];
 
 export default function Page() {
