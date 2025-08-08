@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="w-full  shadow-sm px-4 py-3 flex items-center justify-between">
+      <nav className="w-full  shadow-sm px-2 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="bg-[#0095B6] px-3 py-1 rounded-lg">
           <h1 onClick={()=>router.push("/")} className="text-lg cursor-pointer font-bold text-white italic">Ricentra</h1>
@@ -24,7 +24,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:block">
-          <ul className="flex items-center gap-6 font-semibold text-lg ">
+          <ul className="flex items-center gap-6 font-semibold text-sm lg:text-lg ">
             <li><Link href="/">Home</Link></li>
             <li><Link href="/certifications">Certifications</Link></li>
             <li><Link href="/inquiry">Export Inquiry</Link></li>
@@ -41,7 +41,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4 md:gap-6 ">
         
          <div className="hidden md:block">
-         {  <BatteryStatus /> }
+         {/* {  <BatteryStatus /> } */}
          </div>
           <div>
             <button onClick={()=>router.push("inquiry")} className="bg-[#0095B6] text-white font-semibold px-3 py-2 rounded-lg cursor-pointer border-1 border-[#0095B6] hover:bg-white hover:text-[#0095B6] transition-all">Request a Quote</button>
