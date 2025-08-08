@@ -8,6 +8,7 @@ import Trade from "./_components/Trade";
 import SliderShowcase from "./_components/SLiderShowcase";
 import ScrollToTopButton from "./_components/ScrollToTopButton";
 import Footer from "./_components/Footer";
+import { TextScroll } from "@/components/ui/text-scroll";
 
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
      <main className="px-4 sm:px-10 space-y-10">
   <section >
     <h1 className=" text-3xl md:text-5xl mt-3 italic  tracking-tight font-extrabold py-2 text-transparent bg-[url('/imgs/heading.jpg')] bg-cover bg-bottom bg-clip-text">Ricentra Blogs</h1>
-    <p className="italic font-semibold text-[#353839]  flex items-center gap-1 ">
+    <p className="italic font-semibold light:text-[#353839]  flex items-center gap-1 ">
       The  <Heart className="text-[#db20d5]" /> Of Premium Rice
      
     </p>
@@ -64,6 +65,11 @@ export default function Home() {
   {/* Latest component should be in normal flow */}
   <section >
     <Latest />
+    <TextScroll
+      className="font-display text-center text-4xl font-semibold tracking-tighter  md:text-7xl md:leading-[5rem]"
+      text="The &#10084; OF Premium Rice"
+      default_velocity={5}
+    />
     <Trade/>
   </section>
   <section>

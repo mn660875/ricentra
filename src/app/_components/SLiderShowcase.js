@@ -20,7 +20,7 @@ export default function SliderShowcase() {
       {/* Left Content */}
       <div className="md:w-1/2 space-y-4">
         <h2 className="text-3xl font-bold">Premium Rice Exports</h2>
-        <p className="text-gray-700">
+        <p className="">
           Discover the journey of Pakistan’s top-quality Basmati rice as it reaches global markets. Explore stories of farmers, exporters, and changing global trends.
         </p>
         <button className="bg-[#db20d5] px-4 py-2 rounded-md text-white font-semibold border hover:bg-transparent hover:border hover:border-[#db20d5] hover:text-[#db20d5] transition">

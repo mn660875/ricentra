@@ -73,7 +73,7 @@ export default function Page() {
         {certifications.map((cert, index) => (
           <div
             key={index}
-            className="bg-white shadow-lg rounded-xl p-6 border border-gray-100"
+            className="light:bg-white shadow-lg rounded-xl p-6 border border-gray-100"
           >
             <div className="flex items-center gap-2 mb-3">
               <h3 className="text-xl font-semibold text-dark">{cert.title}</h3>
