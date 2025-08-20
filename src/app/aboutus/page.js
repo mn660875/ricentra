@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "../_components/Navbar";
+import Footer from "../_components/Footer";
 
 export default function Page() {
     return (
@@ -47,6 +48,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <Footer/>
         </>
      
     );

@@ -28,7 +28,7 @@ export default function Home() {
     </section>
      <main className="px-4 sm:px-10 space-y-10">
   <section >
-    <h1 className=" text-3xl md:text-5xl mt-3 italic  tracking-tight font-extrabold py-2 text-transparent bg-[url('/imgs/heading.jpg')] bg-cover bg-bottom bg-clip-text">Ricentra Blogs</h1>
+    <h1 className=" text-3xl md:text-5xl mt-3 italic  tracking-tight font-extrabold py-2 text-transparent bg-[url('/imgs/heading.jpg')] bg-cover bg-bottom bg-clip-text">Ricentra</h1>
     <p className="italic font-semibold light:text-[#353839]  flex items-center gap-1 ">
       The  <Heart className="text-[#db20d5]" /> Of Premium Rice
      
