@@ -19,7 +19,7 @@ export default function Navbar() {
       <nav className="w-full  shadow-sm px-2 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="bg-[#0095B6] px-3 py-1 rounded-lg">
-          <h1 onClick={()=>router.push("/")} className="text-lg cursor-pointer font-bold text-white italic">Ricentra</h1>
+          <h1 onClick={()=>router.push("/")} className="text-lg cursor-pointer font-bold text-white italic">Ricely</h1>
         </div>
 
         {/* Desktop Menu */}

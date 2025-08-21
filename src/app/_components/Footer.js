@@ -14,7 +14,7 @@ export default function Footer() {
           About
         </h2>
         <p className="tracking-tight pt-6 text-sm leading-relaxed">
-          Ricentra is a forward-thinking platform dedicated to sharing insights 
+          Ricely is a forward-thinking platform dedicated to sharing insights 
           on global trade, innovation, and technology. We aim to empower readers 
           with accurate information, thought-provoking articles, and practical 
           knowledge that supports business growth and personal development.

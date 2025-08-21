@@ -51,18 +51,18 @@ export default function Page() {
             transformed trade, making it faster and more accessible.
           </p>
           <h2 className="headings font-semibold text-xl mt-1">
-            Ricentras Role in Trade
+            Ricelys Role in Trade
           </h2>
           <p className="tracking-tight text-md">
-            <span className="italic font-bold">Ricentra</span> is a
+            <span className="italic font-bold">Ricely</span> is a
             forward-thinking company contributing to Pakistan’s global trade
             landscape through the export of premium-quality rice. By connecting
-            local rice farmers and producers to international markets, Ricentra
+            local rice farmers and producers to international markets, Ricely
             plays a key role in boosting agricultural exports. The company
             ensures quality control, efficient logistics, and compliance with
             international standards, making Pakistani Basmati rice a trusted
             name across borders. Through innovation, technology, and strong
-            trade partnerships, Ricentra continues to strengthen its presence in
+            trade partnerships, Ricely continues to strengthen its presence in
             the global agricultural export sector.
           </p>
         </div>

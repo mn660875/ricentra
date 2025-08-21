@@ -14,7 +14,7 @@ const certifications = [
     title: "Halal Certification",
     status: "Verified",
     description:
-      "Ricentra’s rice is certified Halal, ensuring it meets Islamic dietary guidelines for our Muslim customers in the Middle East and beyond.",
+      "Ricely’s rice is certified Halal, ensuring it meets Islamic dietary guidelines for our Muslim customers in the Middle East and beyond.",
   },
   {
     title: "SABER Registration",
