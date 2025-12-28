@@ -24,7 +24,7 @@ const certifications = [
   },
   {
     title: "SFDA Compliance",
-    status: "In Progress",
+    status: "Verified",
     description:
       "We are working toward full SFDA compliance to ensure a smooth import process into Saudi Arabia.",
   },
